@@ -3,37 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>epic portfolio - eram003</title>
+    <title>eram003</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <a href="#" id="logo"><img src="https://imgur.com/jfhUvHu" alt="Logo"></a>
-        <nav>
-            <a href="https://myanimelist.net/profile/Iz_ERAM">MAL</a>
-            <a href="https://github.com/eram003">GitHub</a>
-            <a href="https://discord.com/users/eram003">Discord</a>
-            <a href="https://open.spotify.com/user/x3brh2mue8b1mo6b4o5q">Spotify</a>
-            <a href="https://steamcommunity.com/id/eram003">Steam</a>
-            <a href="https://x.com/sdreram">X</a>
-            <a href="mailto:sleram16@gmail.com">Email</a>
-        </nav>
-    </header>
+    <div class="glitch-bg"></div>
+    
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="https://i.imgur.com/jfhUvHu.png" alt="Logo" class="nav-logo">
+        </div>
+        <div class="nav-links">
+            <a href="https://github.com/eram003" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://discord.com/users/eram003" target="_blank" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://open.spotify.com/user/x3brh2mue8b1mo6b4o5q5h94q" target="_blank" title="Spotify">
+                <i class="fab fa-spotify"></i>
+            </a>
+            <a href="https://steamcommunity.com/id/eram003" target="_blank" title="Steam">
+                <i class="fab fa-steam"></i>
+            </a>
+            <a href="https://www.youtube.com/@eram003" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <div class="nav-contact">
+            <a href="mailto:sleram16@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1VMn0wKjqnHFG0J0gdSgB0S3oB-zQ654A/view?usp=sharing" target="_blank" title="Resume">
+                <i class="fas fa-file-alt"></i>
+            </a>
+        </div>
+    </nav>
+
     <main>
-        <h1>This is eram003</h1>
-        <div id="number-display">1.048596</div>
-        <button onclick="window.location.href='http://futuregadget-lab.com/'">003</button>
-        <button onclick="window.location.href='#about'">About me</button>
+        <section class="hero">
+            <h1 class="gradient-text">This is eram003</h1>
+            <div class="button-container">
+                <button class="discord-button" onclick="window.location.href='https://discord.com/invite/n8nTvSkrxD'">CGPAIN'T</button>
+                <button class="about-button" onclick="window.location.href='#about'">About me</button>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="content-box">
+                <div class="info-box">
+                    <div class="box-content">
+                        <h3>What I Do</h3>
+                        <p>I like E-game development and know my way around Godot engine a bit. I sometimes do Arduino-based projects. I'm interested in cybersecurity and automation.</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="box-content">
+                        <h3>My Skills</h3>
+                        <ul>
+                            <li>HTML, C, Python</li>
+                            <li>Video Editing (Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve)</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works-section">
+            <h2>My Works</h2>
+            <div class="works-container">
+                <div class="work-item">
+                    <h3>The sync of '87</h3>
+                    <a href="https://www.youtube.com/watch?v=IYTK3VHrpJ8" target="_blank">
+                        <div class="work-image">
+                            <img src="https://img.youtube.com/vi/IYTK3VHrpJ8/maxresdefault.jpg" alt="The sync of '87">
+                            <div class="overlay">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <h3>Tweaks</h3>
+                    <a href="https://github.com/eram003/Stuff-I-fw" target="_blank">
+                        <div class="work-image">
+                            <img src="https://i.imgur.com/S8mApvY.jpg" alt="Tweaks Project">
+                            <div class="overlay">
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <form action="mailto:sleram16@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
-    <footer>
-        <h2>Get In Touch</h2>
-        <form action="mailto:sleram16@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
