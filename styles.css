@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #4ca1af;
+    --primary-color: #ff4081;
     --accent-color: #00bcd4;
     --discord-color: #5865F2;
     --resume-color: #ff6b6b;
@@ -36,10 +36,6 @@ body {
     animation: glitch-bg 10s ease infinite;
     pointer-events: none;
     z-index: 0;
-}
-
-h1:hover, h2:hover, .info-box:hover {
-    color: #4ca1af; 
 }
 
 .navbar {
@@ -105,6 +101,7 @@ h1:hover, h2:hover, .info-box:hover {
     transform: translateY(-2px);
 }
 
+
 .hero {
     height: 100vh;
     display: flex;
@@ -124,7 +121,8 @@ h1 {
 }
 
 #number-display {
-    display: none;
+    display: none; 
+}
 
 .button-container {
     display: flex;
@@ -135,7 +133,7 @@ h1 {
     padding: 0.8rem 2rem;
     font-size: 1rem;
     border: none;
-    border-radius: 25px; 
+    border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     color: white;
@@ -219,7 +217,7 @@ li {
     color: white;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
-    border-radius: 25px; 
+    border-radius: 25px;
     margin-top: auto;
     text-align: center;
     transition: all 0.3s ease;
@@ -316,7 +314,7 @@ button[type="submit"] {
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
-    border-radius: 25px;
+    border-radius: 25px; 
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
